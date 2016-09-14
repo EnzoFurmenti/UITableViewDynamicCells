@@ -21,18 +21,6 @@
     return self;
 }
 
-//CGFloat red;
-//CGFloat green;
-//CGFloat blue;
-//
-//[currentCellColor getRed:&red green:&green blue:&blue alpha:nil];
-//
-//cell.textLabel.text = [NSString stringWithFormat:@"RGB (%1.2f,%1.2f,%1.2f,1.f)",red,green,blue];
-
-
-
-
-
 #pragma mark - metods
 
 -(UIColor*)randomColor{
