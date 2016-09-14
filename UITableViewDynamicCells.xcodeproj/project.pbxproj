@@ -13,6 +13,7 @@
 		96BDAC7F1D888C6F00EE93F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96BDAC7D1D888C6F00EE93F7 /* Main.storyboard */; };
 		96BDAC811D888C6F00EE93F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96BDAC801D888C6F00EE93F7 /* Assets.xcassets */; };
 		96BDAC841D888C6F00EE93F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96BDAC821D888C6F00EE93F7 /* LaunchScreen.storyboard */; };
+		96BDAC901D88A66C00EE93F7 /* CellColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BDAC8F1D88A66C00EE93F7 /* CellColor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		96BDAC801D888C6F00EE93F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96BDAC831D888C6F00EE93F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96BDAC851D888C6F00EE93F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96BDAC8E1D88A66C00EE93F7 /* CellColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CellColor.h; path = ../CellColor.h; sourceTree = "<group>"; };
+		96BDAC8F1D88A66C00EE93F7 /* CellColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CellColor.m; path = ../CellColor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				96BDAC781D888C6F00EE93F7 /* AppDelegate.m */,
 				96BDAC7A1D888C6F00EE93F7 /* ViewController.h */,
 				96BDAC7B1D888C6F00EE93F7 /* ViewController.m */,
+				96BDAC8E1D88A66C00EE93F7 /* CellColor.h */,
+				96BDAC8F1D88A66C00EE93F7 /* CellColor.m */,
 				96BDAC7D1D888C6F00EE93F7 /* Main.storyboard */,
 				96BDAC801D888C6F00EE93F7 /* Assets.xcassets */,
 				96BDAC821D888C6F00EE93F7 /* LaunchScreen.storyboard */,
@@ -151,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96BDAC7C1D888C6F00EE93F7 /* ViewController.m in Sources */,
+				96BDAC901D88A66C00EE93F7 /* CellColor.m in Sources */,
 				96BDAC791D888C6F00EE93F7 /* AppDelegate.m in Sources */,
 				96BDAC761D888C6F00EE93F7 /* main.m in Sources */,
 			);

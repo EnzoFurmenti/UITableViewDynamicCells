@@ -7,10 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "CellColor.h"
 
 @interface ViewController ()<UITableViewDataSource>
 
-@property (strong,nonatomic) NSMutableArray<UIColor*> *mArrayColors;
+@property (strong,nonatomic) NSMutableArray *mArrayColors;
 
 @end
 
@@ -21,7 +22,8 @@
     
     for(int n = 0; n <= 999; n++)
     {
-        [self.mArrayColors addObject:[self randomColor]];
+        CellColor *cellColor = [[CellColor alloc] initWithRandomColor];
+        [self.mArrayColors addObject:cellColor];
     }
 
 }
@@ -54,31 +56,12 @@
     {
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:identifier];
     }
-    
-    UIColor *currentCellColor = [self.mArrayColors objectAtIndex:indexPath.row];
     cell.detailTextLabel.text = [NSString stringWithFormat:@" Ячейка - %ld",(long)indexPath.row];
-    
-    CGFloat red;
-    CGFloat green;
-    CGFloat blue;
-    
-    [currentCellColor getRed:&red green:&green blue:&blue alpha:nil];
-    
-    cell.textLabel.text = [NSString stringWithFormat:@"RGB (%1.2f,%1.2f,%1.2f,1.f)",red,green,blue];
-    cell.textLabel.textColor = currentCellColor;
+    CellColor *currentCellColor = [self.mArrayColors objectAtIndex:indexPath.row];
+    cell.textLabel.text = currentCellColor.colorRGB;
+    cell.textLabel.textColor = currentCellColor.color;
+
     return cell;
-}
-
-
-#pragma mark - metods
-
--(UIColor*)randomColor{
-
-    CGFloat red = (float)(arc4random() % 256) / 255.f;
-    CGFloat green = (float)(arc4random() % 256) / 255.f;
-    CGFloat blue = (float)(arc4random() % 256) / 255.f;
-    
-    return [[UIColor alloc]initWithRed:red green:green blue:blue alpha:1.f];
 }
 
 @end
