@@ -8,10 +8,11 @@
 
 #import "ViewController.h"
 #import "CellColor.h"
+#import "Student.h"
 
 @interface ViewController ()<UITableViewDataSource>
 
-@property (strong,nonatomic) NSMutableArray *mArrayColors;
+@property (strong,nonatomic) NSMutableArray *mArrayStudent;
 
 @end
 
@@ -20,28 +21,35 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    for(int n = 0; n <= 999; n++)
-    {
-        CellColor *cellColor = [[CellColor alloc] initWithRandomColor];
-        [self.mArrayColors addObject:cellColor];
-    }
 
+    for(int n = 0;n <=30; n++)
+    {
+        Student *student = [[Student alloc] initRandomStudent];
+        [self.mArrayStudent addObject:student];
+    }
+    [self.mArrayStudent sortUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
+        Student *student1 = (Student*)obj1;
+        Student *student2 = (Student*)obj2;
+        NSString *student1Name = [student1.lastName stringByAppendingString:student1.firstName];
+        NSString *student2Name = [student2.lastName stringByAppendingString:student2.firstName];
+        return [student1Name localizedCompare:student2Name];
+    }];
 }
 
 #pragma mark - lazy initialization
 
--(NSMutableArray*)mArrayColors{
-    if(!_mArrayColors)
+-(NSArray*)mArrayStudent{
+    if(!_mArrayStudent)
     {
-        _mArrayColors = [[NSMutableArray alloc] init];
+        _mArrayStudent = [[NSMutableArray alloc] init];
     }
-    return _mArrayColors;
+    return _mArrayStudent;
 }
 
 
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return [self.mArrayColors count];
+    return [self.mArrayStudent count];
 }
 
 
@@ -49,6 +57,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     static NSString *identifier = @"CellColor";
+    CGFloat  passMark = 3.5f;
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
 
@@ -56,12 +65,21 @@
     {
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:identifier];
     }
-    cell.detailTextLabel.text = [NSString stringWithFormat:@" Ячейка - %ld",(long)indexPath.row];
-    CellColor *currentCellColor = [self.mArrayColors objectAtIndex:indexPath.row];
-    cell.textLabel.text = currentCellColor.colorRGB;
-    cell.textLabel.textColor = currentCellColor.color;
-
+    
+    Student *currentStudent = [self.mArrayStudent objectAtIndex:indexPath.row];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%1.2f",currentStudent.averageMark];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@ %@",currentStudent.lastName,currentStudent.firstName];
+    
+    UIColor *currentColor = [UIColor blackColor];
+    if(currentStudent.averageMark < passMark)
+    {
+        currentColor = [UIColor redColor];
+    }
+    
+    cell.detailTextLabel.textColor = currentColor;
+    cell.textLabel.textColor = currentColor;
     return cell;
 }
+
 
 @end
