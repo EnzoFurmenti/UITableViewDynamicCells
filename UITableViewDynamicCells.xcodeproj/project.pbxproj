@@ -74,14 +74,6 @@
 				96BDAC781D888C6F00EE93F7 /* AppDelegate.m */,
 				96BDAC7A1D888C6F00EE93F7 /* ViewController.h */,
 				96BDAC7B1D888C6F00EE93F7 /* ViewController.m */,
-				96BDAC8E1D88A66C00EE93F7 /* CellColor.h */,
-				96BDAC8F1D88A66C00EE93F7 /* CellColor.m */,
-				96D8C41A1D8A7D9E0097FD38 /* Group.h */,
-				96D8C41B1D8A7D9E0097FD38 /* Group.m */,
-				96D8C4171D8A731B0097FD38 /* Groups.h */,
-				96D8C4181D8A731B0097FD38 /* Groups.m */,
-				96D8C4141D896FBA0097FD38 /* Student.h */,
-				96D8C4151D896FBA0097FD38 /* Student.m */,
 				96BDAC7D1D888C6F00EE93F7 /* Main.storyboard */,
 				96BDAC801D888C6F00EE93F7 /* Assets.xcassets */,
 				96BDAC821D888C6F00EE93F7 /* LaunchScreen.storyboard */,
@@ -94,6 +86,14 @@
 		96BDAC741D888C6F00EE93F7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				96BDAC8E1D88A66C00EE93F7 /* CellColor.h */,
+				96BDAC8F1D88A66C00EE93F7 /* CellColor.m */,
+				96D8C41A1D8A7D9E0097FD38 /* Group.h */,
+				96D8C41B1D8A7D9E0097FD38 /* Group.m */,
+				96D8C4171D8A731B0097FD38 /* Groups.h */,
+				96D8C4181D8A731B0097FD38 /* Groups.m */,
+				96D8C4141D896FBA0097FD38 /* Student.h */,
+				96D8C4151D896FBA0097FD38 /* Student.m */,
 				96BDAC751D888C6F00EE93F7 /* main.m */,
 			);
 			name = "Supporting Files";
