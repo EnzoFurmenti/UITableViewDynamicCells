@@ -22,8 +22,10 @@
                                 <rect key="frame" x="20" y="40" width="560" height="540"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="scrollIndicatorInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="20"/>
+                                <color key="sectionIndexBackgroundColor" red="0.39215686274509803" green="0.6470588235294118" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="UNO-i6-b2b"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ok3-Br-wAQ"/>
                                 </connections>
                             </tableView>
                         </subviews>

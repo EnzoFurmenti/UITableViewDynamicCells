@@ -74,7 +74,7 @@ static int lastNameCount = 21;
 }
 
 -(CGFloat)randomMark{
-    return (CGFloat)(arc4random() % 500) / 100.f;
+    return (CGFloat)(arc4random() % 301) / 100.f + 2.f;
 }
 
 

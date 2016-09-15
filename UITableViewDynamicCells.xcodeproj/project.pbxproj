@@ -15,6 +15,8 @@
 		96BDAC841D888C6F00EE93F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96BDAC821D888C6F00EE93F7 /* LaunchScreen.storyboard */; };
 		96BDAC901D88A66C00EE93F7 /* CellColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BDAC8F1D88A66C00EE93F7 /* CellColor.m */; };
 		96D8C4161D896FBA0097FD38 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D8C4151D896FBA0097FD38 /* Student.m */; };
+		96D8C4191D8A731B0097FD38 /* Groups.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D8C4181D8A731B0097FD38 /* Groups.m */; };
+		96D8C41C1D8A7D9E0097FD38 /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D8C41B1D8A7D9E0097FD38 /* Group.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,10 @@
 		96BDAC8F1D88A66C00EE93F7 /* CellColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CellColor.m; path = ../CellColor.m; sourceTree = "<group>"; };
 		96D8C4141D896FBA0097FD38 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Student.h; path = ../Student.h; sourceTree = "<group>"; };
 		96D8C4151D896FBA0097FD38 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Student.m; path = ../Student.m; sourceTree = "<group>"; };
+		96D8C4171D8A731B0097FD38 /* Groups.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Groups.h; path = ../Groups.h; sourceTree = "<group>"; };
+		96D8C4181D8A731B0097FD38 /* Groups.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Groups.m; path = ../Groups.m; sourceTree = "<group>"; };
+		96D8C41A1D8A7D9E0097FD38 /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Group.h; path = ../Group.h; sourceTree = "<group>"; };
+		96D8C41B1D8A7D9E0097FD38 /* Group.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Group.m; path = ../Group.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,10 @@
 				96BDAC7B1D888C6F00EE93F7 /* ViewController.m */,
 				96BDAC8E1D88A66C00EE93F7 /* CellColor.h */,
 				96BDAC8F1D88A66C00EE93F7 /* CellColor.m */,
+				96D8C41A1D8A7D9E0097FD38 /* Group.h */,
+				96D8C41B1D8A7D9E0097FD38 /* Group.m */,
+				96D8C4171D8A731B0097FD38 /* Groups.h */,
+				96D8C4181D8A731B0097FD38 /* Groups.m */,
 				96D8C4141D896FBA0097FD38 /* Student.h */,
 				96D8C4151D896FBA0097FD38 /* Student.m */,
 				96BDAC7D1D888C6F00EE93F7 /* Main.storyboard */,
@@ -162,9 +172,11 @@
 			files = (
 				96BDAC7C1D888C6F00EE93F7 /* ViewController.m in Sources */,
 				96BDAC901D88A66C00EE93F7 /* CellColor.m in Sources */,
+				96D8C41C1D8A7D9E0097FD38 /* Group.m in Sources */,
 				96D8C4161D896FBA0097FD38 /* Student.m in Sources */,
 				96BDAC791D888C6F00EE93F7 /* AppDelegate.m in Sources */,
 				96BDAC761D888C6F00EE93F7 /* main.m in Sources */,
+				96D8C4191D8A731B0097FD38 /* Groups.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
